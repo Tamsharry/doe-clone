@@ -84,7 +84,7 @@ const Navbar = () => {
        {/* dropdown menu */}
       <div className="">
         {submenuArray?.length > 0 ? (
-          <ul className=" hidden  md:flex flex-row w-full h-[50px] items-center justify-center fixed top-[60px] text-sm gap-5 bg-white shadow-lg ">
+          <ul className=" hidden  md:flex flex-row w-full h-[50px] items-center justify-center fixed top-[60px] text-sm gap-5 bg-white shadow-lg z-20 ">
             {submenuArray.map((sbmenu, i) => {
               return<li key={i} className='hover:text-[#EA4544]'>{sbmenu.title}</li>;
             })}

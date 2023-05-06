@@ -3,9 +3,9 @@ import Carousel from './Carousel'
 
 const Hero = () => {
   return (
-    <section className='realative w-full h-screen mx-auto  '>
+    <section className='relative w-full h-screen mx-auto  '>
       
-       {/* <Carousel/> */}
+       <Carousel/>
      </section>
   )
 }

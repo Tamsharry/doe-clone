@@ -4,11 +4,11 @@ import { MdKeyboardArrowRight } from 'react-icons/md'
 
 
 const About = () => {
-  const newLocal = "box-content h-full lg:w-1/2 top-[5] md:ml-2 bg-[#0F5EAB] flex flex-col items-center justify-center";
+  const newLocal = "box-content h-full lg:w-1/2  md:ml-2 bg-[#0F5EAB] flex flex-col items-center justify-center";
   return (
     <div className='flex flex-col md:flex-row w-full h-[560px] mx-auto px-4 py-4 bg-white gap-4 md:gap-4 md:justify-center'>
        
-     <div className="box-content h-full lg:w-1/2 top-[5]  bg-about bg-cover bg-no-repeat bg-center flex flex-col items-center justify-center">
+     <div className="box-content h-full lg:w-1/2   bg-about bg-cover bg-no-repeat bg-center flex flex-col items-center justify-center">
      
       <h1 className='text-center text-xl font-extrabold text-black'> About Doe Resources</h1>
      <p className='text-center text-base font-semibold px-4 text-black '> Doe Resources is an Apple Authorized Reseller which is a.
