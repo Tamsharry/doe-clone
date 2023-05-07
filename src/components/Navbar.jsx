@@ -8,6 +8,7 @@ const Navbar = () => {
   const [mnav, setmnav] = useState(false);
   const [submenu, setsubmenu] = useState(false);
   const [submenuArray, setsubmenuArray] = useState([]);
+  const [sbmenuArray, setsbmenuArray] = useState([]);
 
   // const handleClick = () => setsubmenu(!submenu);
 
@@ -86,7 +87,17 @@ const Navbar = () => {
         {submenuArray?.length > 0 ? (
           <ul className=" hidden  md:flex flex-row w-full h-[50px] items-center justify-center fixed top-[60px] text-sm gap-5 bg-white shadow-lg z-20 ">
             {submenuArray.map((sbmenu, i) => {
-              return<li key={i} className='hover:text-[#EA4544]'>{sbmenu.title}</li>;
+              return<li key={i} className='hover:cursor-pointer'
+              onMouseOver={()=>
+                sbmenu?setsbmenuArray(sbmenu)
+                :setsbmenuArray([])
+              }
+               onMouseOut={()=>
+                setsbmenuArray('')
+              }
+              >
+
+                {sbmenu.title}</li>;
             })}
           </ul>
         ) : null}
