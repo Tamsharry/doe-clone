@@ -7,11 +7,11 @@ const About = () => {
   const newLocal = "box-content h-full lg:w-1/2  md:ml-2 bg-[#0F5EAB] flex flex-col items-center justify-center";
   return (
     <div className='flex flex-col md:flex-row w-full h-[560px] mx-auto px-4 py-4 bg-white gap-4 md:gap-4 md:justify-center'>
-       
-     <div className="box-content h-full lg:w-1/2   bg-about bg-cover bg-no-repeat bg-center flex flex-col items-center justify-center">
      
-      <h1 className='text-center text-xl font-extrabold text-black'> About Doe Resources</h1>
-     <p className='text-center text-base font-semibold px-4 text-black '> Doe Resources is an Apple Authorized Reseller which is a.
+     <div className="box-content h-full lg:w-1/2   bg-about bg-cover bg-no-repeat bg-center flex flex-col items-center ">
+       <div className='w-full h-full flex flex-col items-center bg-black bg-fixed opacity-50'>
+      <h1 className='text-center text-2xl font-extrabold text-white mt-[50px]'> About Doe Resources</h1>
+     <p className='text-center text-base font-semibold px-4 text-white '> Doe Resources is an Apple Authorized Reseller which is a.
     <br/> dedicated hub for Apple products and accessories</p>
 
     <div className='py-3 flex'> 
@@ -22,8 +22,13 @@ const About = () => {
 </div>
   
 </div>
-     
+</div> 
     </div>
+
+
+
+
+  
 
     <div className={newLocal}>
      <div className='flex'> <img src={applelogo2}/> 

@@ -67,10 +67,13 @@ const Navbar = () => {
                     : setsubmenuArray([])
                 }
                   onMouseOut={()=>(
+                   
                     setsubmenuArray([])
+                  
+                    
                   )}
                 key={link.id}
-                className={"hover:bg-white py-4 px-4"}
+                className={"hover:bg-white py-4 px-4"} 
               >
                 {link.title}
               </li>
@@ -89,8 +92,8 @@ const Navbar = () => {
             {submenuArray.map((sbmenu, i) => {
               return<li key={i} className='hover:cursor-pointer'
               onMouseOver={()=>
-                sbmenu?setsbmenuArray(sbmenu)
-                :setsbmenuArray([])
+              
+              setsbmenuArray()
               }
                onMouseOut={()=>
                 setsbmenuArray('')
